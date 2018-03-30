@@ -61,6 +61,16 @@
     <Compile Include="Auditing\Cmdlet\AuditingSettings\SqlServerAuditingCmdletBase.cs" />
     <Compile Include="Auditing\Model\DatabaseBlobAuditingSettingsModel.cs" />
     <Compile Include="Auditing\Model\ServerBlobAuditingSettingsModel.cs" />
+    <Compile Include="Automatic Tuning\Cmdlet\AzureSqlDatabaseAutomaticTuningCmdletBase.cs" />
+    <Compile Include="Automatic Tuning\Cmdlet\AzureSqlServerAutomaticTuningCmdletBase.cs" />
+    <Compile Include="Automatic Tuning\Cmdlet\GetAzureSqlDatabaseAutomaticTuningConfiguration.cs" />
+    <Compile Include="Automatic Tuning\Cmdlet\GetAzureSqlServerAutomaticTuningConfiguration.cs" />
+    <Compile Include="Automatic Tuning\Cmdlet\SetAzureSqlDatabaseAutomaticTuningConfiguration.cs" />
+    <Compile Include="Automatic Tuning\Cmdlet\SetAzureSqlServerAutomaticTuningConfiguration.cs" />
+    <Compile Include="Automatic Tuning\Model\AzureSqlDatabaseAutomaticTuningModel.cs" />
+    <Compile Include="Automatic Tuning\Model\AzureSqlServerAutomaticTuningModel.cs" />
+    <Compile Include="Automatic Tuning\Services\AzureSqlAutomaticTuningAdapter.cs" />
+    <Compile Include="Automatic Tuning\Services\AzureSqlAutomaticTuningCommunicator.cs" />
     <Compile Include="Common\ResourceIdentityHelper.cs" />
     <Compile Include="Database\Cmdlet\StopAzureSqlDatabaseActivity.cs" />
     <Compile Include="Database\Model\DatabaseReadScale.cs" />
@@ -450,14 +460,27 @@
     <!--<Reference Include="Microsoft.Azure.Management.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Microsoft.Azure.Management.Sql.1.3.0-preview\lib\net452\Microsoft.Azure.Management.Sql.dll</HintPath>-->
     <Reference Include="Microsoft.Azure.Management.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Microsoft.Azure.Management.Sql.1.10.0-preview\lib\net452\Microsoft.Azure.Management.Sql.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Microsoft.Azure.Management.Sql.1.12.0-preview\lib\net452\Microsoft.Azure.Management.Sql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Azure.Management.Storage">
       <HintPath>..\..\..\packages\Microsoft.Azure.Management.Storage.2.4.0-preview\lib\net40\Microsoft.Azure.Management.Storage.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.Rest.ClientRuntime.2.3.10\lib\net452\Microsoft.Rest.ClientRuntime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime.Azure, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.Rest.ClientRuntime.Azure.3.3.10\lib\net452\Microsoft.Rest.ClientRuntime.Azure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.WindowsAzure.Management.Storage">
       <HintPath>..\..\..\packages\Microsoft.WindowsAzure.Management.Storage.5.1.1\lib\net40\Microsoft.WindowsAzure.Management.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

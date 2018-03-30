@@ -35,6 +35,9 @@ Gets the auditing settings of an Azure SQL database.
 ### [Get-AzureRmSqlDatabaseAuditingPolicy](Get-AzureRmSqlDatabaseAuditingPolicy.md)
 Gets the auditing policy of a database.
 
+### [Get-AzureRmSqlDatabaseAutomaticTuningConfiguration](Get-AzureRmSqlDatabaseAutomaticTuningConfiguration.md)
+Gets current Automatic Tuning settings from an Azure SQL Database.
+
 ### [Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy](Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy.md)
 Gets a database long term retention policy.
 
@@ -121,6 +124,9 @@ Gets the auditing settings of an Azure SQL server.
 
 ### [Get-AzureRmSqlServerAuditingPolicy](Get-AzureRmSqlServerAuditingPolicy.md)
 Gets the auditing policy of a SQL server.
+
+### [Get-AzureRmSqlServerAutomaticTuningConfiguration](Get-AzureRmSqlServerAutomaticTuningConfiguration.md)
+{{Fill in the Synopsis}}
 
 ### [Get-AzureRmSqlServerBackupLongTermRetentionVault](Get-AzureRmSqlServerBackupLongTermRetentionVault.md)
 Gets a server long term retention vault.
@@ -317,6 +323,9 @@ Changes the auditing settings for an Azure SQL database.
 ### [Set-AzureRmSqlDatabaseAuditingPolicy](Set-AzureRmSqlDatabaseAuditingPolicy.md)
 Sets the auditing policy for a database.
 
+### [Set-AzureRmSqlDatabaseAutomaticTuningConfiguration](Set-AzureRmSqlDatabaseAutomaticTuningConfiguration.md)
+{{Fill in the Synopsis}}
+
 ### [Set-AzureRmSqlDatabaseBackupLongTermRetentionPolicy](Set-AzureRmSqlDatabaseBackupLongTermRetentionPolicy.md)
 Sets a server long term retention policy.
 
@@ -367,6 +376,9 @@ Changes the auditing settings of an Azure SQL server.
 
 ### [Set-AzureRmSqlServerAuditingPolicy](Set-AzureRmSqlServerAuditingPolicy.md)
 Changes the auditing policy of a SQL Database server.
+
+### [Set-AzureRmSqlServerAutomaticTuningConfiguration](Set-AzureRmSqlServerAutomaticTuningConfiguration.md)
+{{Fill in the Synopsis}}
 
 ### [Set-AzureRmSqlServerBackupLongTermRetentionVault](Set-AzureRmSqlServerBackupLongTermRetentionVault.md)
 Sets a server long term retention vault.
